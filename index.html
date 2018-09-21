@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="node_modules/fullpage.js/dist/fullpage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Collider</title>
+</head>
+<body>
+    <header>
+            <img id="logo" src="http://placehold.it/230x65"/>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About us</a></li>
+                    <li><a href="pages/news.html">News</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img class ="search-bar" src="img/search.svg" width="30px" height="30px" alt="search"/>
+    </header>
+    <div id="page-switcher-container">
+        <ul id="page-switcher">
+            <li><a data-menuanchor="main" href="#main">01</a></li>
+            <li><a data-menuanchor="collider" href="#collider">02</a></li>
+            <li><a data-menuanchor="sell" href="#sell">03</a></li>
+            <li><a data-menuanchor="price" href="#price">04</a></li>
+            <li><a data-menuanchor="received" href="#received">05</a></li>
+            <li><a data-menuanchor="report" href="#report">06</a></li>
+            <li><a data-menuanchor="criteria" href="#criteria">07</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+    <section class="section" data-anchor="main" id="slide1">
+        <div class="container">
+            <div class="main-titles-container">
+                <div class="main-titles">
+                <div class="yellow-square"></div>
+                <h1>The first virtual real estate marketplace</h1>
+                <p>
+                    Where buyers are connected & transact directly with the most
+                    likely sellers via carefully crafted artificial intelligence algorithms
+                </p>
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" data-anchor="collider" id="slide2">
+        <div class="container">
+            <div class="center-container">
+                <div class="center">
+                    <h1>Co<span>ll</span>ider</h1>
+                    <p>Analyzing data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" data-anchor="sell" id="slide3">
+        <div class="split-container">
+            <div class="split left">
+                <div class="container">
+                <div class="main-titles-container">
+                    <div class="main-titles half">
+                    <div class="yellow-square"></div>
+                    <h1>Based on<br/> provided</h1>
+                    <p class="half">
+                        Info your property is worth in the <span>$5 - 6.2M range</span><br/>
+                        Collider has identified 25 most likely buyers
+                    </p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a class="button yellow">Comparables</a>
+                    <a class="button transparent">Sell with us?</a>
+                </div>
+                </div>
+            </div>
+            <div class="split right">
+                <div class="button-container">
+                    <a class="button yellow">Comparables</a>
+                    <a class="button transparent">Sell with us?</a>
+                </div>   
+            </div>   
+        </div> 
+    </section>
+    <section class="section" data-anchor="price" id="slide4">
+        <div class="form-container">
+            <form id="askprice">
+                <h3>Asking price</h3>
+                <input type="text" name="askprice" required/>
+                <div class="btn-container">
+                    <button class="upload-btn">
+                        <i class="fas fa-paperclip"></i>Attach rent roll & expenses
+                    </button>
+                    <input type="file" name="file" required/>
+                </div>
+                <h3>Comments</h3>
+                <textarea name="comments"></textarea>
+                <button class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="section" data-anchor="received" id="slide5">
+        <div class="container">
+            <h2 class="title">We have received your</h2>
+                <ul class="check">
+                    <li>Property info</li>
+                    <li>Signed commission agreement</li>
+                    <li>Rent roll & expenses</li>
+                    <li>You will receive your first property sale report in 7 days</li>
+                </ul>
+        </div>
+    </section>
+    <section class="section" data-anchor="report" id="slide6">
+        <div class="container">
+            <h2 class="title">Property sale status report</h2>
+            <div class="numbers-container">
+                <div class="item">
+                    <h1>45<span>755</span></h1>
+                    <p>Property sale status report</p>
+                </div>
+                <div class="item">
+                    <h1>5<span>755</span></h1>
+                    <p>Signed confi for the property & received info</p>
+                </div>
+                <div class="item">
+                    <h1>2<span>745</span></h1>
+                    <p>Have expressed interest to tour</p>
+                </div>
+                <div class="item">
+                    <h1>5<span>755</span></h1>
+                    <p>Submitted offers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" data-anchor="criteria" id="slide7">
+        <div class="container">
+            <h1 class="title">Tell us more about your acquisition criteria</h1>
+            <div class="form-container">
+                <form id="acquisition">
+                    <h3>Neighbourhood</h3>
+                    <input type="text" name="neighbourhood" required/>
+                    <h3>Property type</h3>
+                    <input type="text" name="property" required/>
+                    <h3>Minimal cap rate</h3>
+                    <input type="text" name="cap-rate"/>
+                    <h3>Deal volume</h3>
+                    <div class="form-line">
+                        <input type="text" name="min" placeholder="Min" required/>
+                        <input type="text" name="max" placeholder="Max" required/>
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+    <footer>
+        <div class="social-icons">
+            <div class="icon"><a><i class="fab fa-facebook-f"></i></a></div>  
+            <div class="icon"><a><i class="fab fa-twitter"></i></a></div>
+            <div class="icon"><a><i class="fab fa-google-plus-g"></i></a></div>
+            <div class="icon"><a><i class="fab fa-linkedin-in"></i></a></div>
+        </div>
+        <div id="arrow">
+            <img src="img/down-arrow.svg" width="20px"  alt="arrow"/>
+        </div>
+    </footer>
+    <script src="node_modules/fullpage.js/dist/fullpage.extensions.min.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>
